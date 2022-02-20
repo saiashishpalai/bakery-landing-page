@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Suchismita</h2>
+            <div class="toggle"></div>
+            <!--hamburger/cross-->
+        </header>
+        <video src="video.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <!--colour over the video-->
+
+        <div class="text">
+            <h2>Kwazy Cakes</h2>
+            <h3>Baked Just Right</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ut illum quasi rerum fugit exercitationem
+                minima placeat, perferendis ducimus pariatur.</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/suchismita.ghadei"><img src="https://i.ibb.co/x7P24fL/facebook.png"
+                        alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Branches</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <!--JS-->
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            showcase.classList.toggle('active');
+        })
+
+    </script>
+
+</body>
+
+</html>
